@@ -213,8 +213,8 @@ def loadtests(filename):
 
 run_tests = True
 if run_tests:
-    loadtests(r"top95")
-    #loadtests(r"msk_009")
+    #loadtests(r"top95")
+    loadtests(r"msk_009")
 else:
     game = Board(initboard)
     print(game)
