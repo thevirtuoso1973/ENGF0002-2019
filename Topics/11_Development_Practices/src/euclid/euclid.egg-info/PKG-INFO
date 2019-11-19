@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: euclid
+Version: 0.0.1
+Summary: Euclid greatest common denominator (GCD) library
+Home-page: https://github.com/mhandley/ENGF0002
+Author: George Danezis, University College London
+Author-email: g.danezis@ucl.ac.uk
+License: BSD
+Description: ....
+Platform: UNKNOWN
