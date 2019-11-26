@@ -19,9 +19,9 @@ def task_test():
 def task_build():
     """build cmd """
     return {
-        'actions': ['pdflatex -shell-escape 10_Development_Practices ;pdflatex -shell-escape 10_Development_Practices ; bibtex 10_Development_Practices ; pdflatex -shell-escape 10_Development_Practices',],
+        'actions': ['pdflatex -shell-escape 11_Development_Practices ;pdflatex -shell-escape 11_Development_Practices ; bibtex 11_Development_Practices ; pdflatex -shell-escape 11_Development_Practices',],
         'file_dep': ["testreport.txt"] + Python_files +
-                     ["10_Development_Practices.tex"],
-        'targets': ["10_Development_Practices.pdf"],
+                     ["11_Development_Practices.tex"],
+        'targets': ["11_Development_Practices.pdf"],
         'verbosity': 2,
         }

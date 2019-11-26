@@ -1,9 +1,0 @@
-setup.py
-euclid/__init__.py
-euclid/gcd.py
-euclid.egg-info/PKG-INFO
-euclid.egg-info/SOURCES.txt
-euclid.egg-info/dependency_links.txt
-euclid.egg-info/entry_points.txt
-euclid.egg-info/requires.txt
-euclid.egg-info/top_level.txt
