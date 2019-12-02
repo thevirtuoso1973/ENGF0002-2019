@@ -5,6 +5,7 @@ class Audio:
         try:
             import simpleaudio  
         except ImportError:
+            print("Audio disabled.  To enable audio, install the python simpleaudio package")
             self.AUDIO = False
 
         if self.AUDIO:
