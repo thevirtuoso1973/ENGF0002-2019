@@ -156,7 +156,7 @@ class Network():
         self.__controller.foreign_pacman_left()
 
     def send_foreign_pacman_left(self):
-        print("send pacman_left")
+        #print("send pacman_left")
         payload = []
         msg = ["pacmanleft", payload]
         self.send(msg)
@@ -175,7 +175,7 @@ class Network():
         self.__controller.pacman_go_home()
 
     def send_pacman_go_home(self):
-        print("send pacman_go_home")
+        #print("send pacman_go_home")
         payload = []
         msg = ["pacmanhome", payload]
         self.send(msg)
