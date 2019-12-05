@@ -54,7 +54,7 @@ class Network():
     def client(self, ip, port):
         self.__sock.connect((ip, port))
         self.__sock.send(self.__password.encode())
-        msg = self.__sock.recv(1024)
+        msg = self.__sock.recv(3)
         txt = msg.decode()
         if txt == "OK\n":
             self.__connected = True
