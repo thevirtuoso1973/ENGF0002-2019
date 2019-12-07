@@ -21,7 +21,8 @@ def recv_message(sock):
 
 def handle_connection(sock):
     # handle an entire chat connection
-    while True:        try:
+    while True:
+        try:
             # call select to find out if there's any data ready
             rd, wd, ed = select.select([sock, sys.stdin],[],[])
 
@@ -30,7 +31,7 @@ def handle_connection(sock):
 
             if sock in rd:
                 recv_message(sock)
-                
+
         except (EOFError, KeyboardInterrupt):
             print("End of input - closing connection")
             break
@@ -45,7 +46,7 @@ serv = False
 for arg in sys.argv:
     if arg == "-s":
         serv = True
-        
+
 sock = create_socket()
 if serv:
     server(sock, 1234)
